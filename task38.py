@@ -89,7 +89,6 @@ def del_person():
             if del_name in d[i_line]:
                 del d[i_line]
     with open('files\\phonebook.txt', 'w', encoding='utf-8') as data:
-        print(d)
         for line in d:
             data.write(line)
 
